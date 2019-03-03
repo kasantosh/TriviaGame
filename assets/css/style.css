@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto Slab", serif;
+}
+header {
+  margin: 0px auto 20px auto;
+  background-color: black;
+  border-bottom: 4px solid red;
+  padding: 20px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  background: url();
+  background-repeat: repeat;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+#trivia {
+  padding-left: 50px;
+}
+#message {
+  text-align: center;
+}
+
+#startGame {
+  width: 200px;
+  background-color: blue;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  font-size: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#btnDiv {
+  display: flex;
+  justify-content: center;
+}
