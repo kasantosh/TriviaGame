@@ -15,45 +15,60 @@
       <h1>Totally Trivial Trivia</h1>
     </header>
     <div class="container">
-      <h2 id='message'>You have 60 seconds to answer 10 questions. <br>
+      <h2 id='message'>You have 45 seconds to answer 6 questions. <br>
       Good luck!</h2>
-      <div id='btnDiv'>
-      <button id="startGame" type="button" name="startButton">
+      <div id='btnStartDiv'>
+      <button class = "buttonDesign" id="startGame" type="button" name="startButton">
         <strong>START TRIVIA</strong>
       </button>
     </div>
       <div id="trivia">
-          <h3>1. Which country, the capital city of which is Cairo, is also known as 'Om El Donya'?</h3>
-          <input type = 'radio' name=q1 value = q1>Iraq</input><br>
-          <input type = 'radio' name=q1 value = q1>Egypt</input><br>
-          <input type = 'radio' name=q1 value = q1>Iran</input><br>
-          <input type = 'radio' name=q1 value = q1>Somalia</input><br>
-          <h3>2. Which chemical element has the atomic number of 1?</h3>
-          <input type = 'radio' name=q2 value = q2>Helium</input><br>
-          <input type = 'radio' name=q2 value = q2>Oxygen</input><br>
-          <input type = 'radio' name=q2 value = q2>Hydrogen</input><br>
-          <input type = 'radio' name=q2 value = q2>Sodium</input><br>
-          <h3>3. Which sport would you be playing when competing for the Davis Cup?</h3>
-                <input type = 'radio' name=q3 value = q3>Tennis</input><br>
-                <input type = 'radio' name=q3 value = q3>Badminton</input><br>
-                <input type = 'radio' name=q3 value = q3>Hockey</input><br>
-                <input type = 'radio' name=q3 value = q3>Volley Ball</input><br>
-        <h3>4. How many Oscars did the 1997 movie "Titanic" win?</h3>
-                <input type = 'radio' name=q4 value = q4>9</input><br>
-                <input type = 'radio' name=q4 value = q4>11</input><br>
-                <input type = 'radio' name=q4 value = q4>10</input><br>
-                <input type = 'radio' name=q4 value = q4>12</input><br>
-        <h3>5. What does Fauna refer to?</h3>
-                <input type = 'radio' name=q5 value = q5>Plant Life</input><br>
-                <input type = 'radio' name=q5 value = q5>Insects</input><br>
-                <input type = 'radio' name=q5 value = q5>Flowers</input><br>
-                <input type = 'radio' name=q5 value = q5>Animal Life</input><br>
-        <h3>6. Ascorbic Acid is commonly referred to as ...?</h3>
-                <input type = 'radio' name=q4 value = q4>Vitamin C</input><br>
-                <input type = 'radio' name=q4 value = q4>Vitamin D</input><br>
-                <input type = 'radio' name=q4 value = q4>Vitmain A</input><br>
-                <input type = 'radio' name=q4 value = q4>Vitamin B</input><br>
+          <h3 id = "q1">1. Which country, the capital city of which is Cairo, is also known as 'Om El Donya'?</h3>
+          <input type = 'radio' name="q1" value = "1">Iraq</input><br>
+          <input type = 'radio' name="q1" value = "2">Egypt</input><br>
+          <input type = 'radio' name="q1" value = "3">Iran</input><br>
+          <input type = 'radio' name="q1" value = "4">Somalia</input><br>
+
+          <h3  id = "q2">2. Which chemical element has the atomic number of 1?</h3>
+          <input type = 'radio' name="q2" value = "1">Helium</input><br>
+          <input type = 'radio' name="q2" value = "2">Oxygen</input><br>
+          <input type = 'radio' name="q2" value = "3">Hydrogen</input><br>
+          <input type = 'radio' name="q2" value = "4">Sodium</input><br>
+
+          <h3 id = "q3">3. Which sport would you be playing when competing for the Davis Cup?</h3>
+                <input type = 'radio' name="q3" value = "1">Tennis</input><br>
+                <input type = 'radio' name="q3" value = "2">Badminton</input><br>
+                <input type = 'radio' name="q3" value = "3">Hockey</input><br>
+                <input type = 'radio' name="q3" value = "4">Volley Ball</input><br>
+
+        <h3 id = "q4">4. How many Oscars did the 1997 movie "Titanic" win?</h3>
+                <input type = 'radio' name="q4" value = "1">9</input><br>
+                <input type = 'radio' name="q4" value = "2">11</input><br>
+                <input type = 'radio' name="q4" value = "3">10</input><br>
+                <input type = 'radio' name="q4" value = "4">12</input><br>
+
+        <h3 id = "q5">5. What does Fauna refer to?</h3>
+                <input type = 'radio' name="q5" value = "1">Plant Life</input><br>
+                <input type = 'radio' name="q5" value = "2">Insects</input><br>
+                <input type = 'radio' name="q5" value = "3">Flowers</input><br>
+                <input type = 'radio' name="q5" value = "4">Animal Life</input><br>
+
+        <h3 id = "q6">6. Ascorbic Acid is commonly referred to as ...?</h3>
+                <input type = 'radio' name="q6" value = "1">Vitamin C</input><br>
+                <input type = 'radio' name="q6" value = "2">Vitamin D</input><br>
+                <input type = 'radio' name="q6" value = "3">Vitmain A</input><br>
+                <input type = 'radio' name="q6" value = "4">Vitamin B</input><br>
         
+      </div>
+      <div id = "btnFinishDiv">
+      <button class = "buttonDesign" id="finishGame" type="button" name="finishButton">
+          <strong>FINISH TRIVIA</strong>
+        </button>
+      </div>
+      <div id='triviaScore'>
+        <h3>Correct Answers: <span id = correctDisplay>0</span></h3>
+        <h3>Wrong Answers: <span id = wrongDisplay>0</span></h3>
+        <h3>Not Answered: <span id = naDisplay>0</span></h3>
       </div>
     </div>
     

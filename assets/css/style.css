@@ -6,11 +6,12 @@ header {
   background-color: black;
   border-bottom: 4px solid red;
   padding: 20px;
+  background-image: url(../images/tile-header.jpg);
 }
 .container {
   width: 80%;
   margin: auto;
-  background: url();
+  background: url(../images/tile.jpg);
   background-repeat: repeat;
   border: 1px solid grey;
   border-radius: 10px;
@@ -27,7 +28,7 @@ h1 {
   text-align: center;
 }
 
-#startGame {
+.buttonDesign {
   width: 200px;
   background-color: blue;
   padding: 10px;
@@ -37,7 +38,21 @@ h1 {
   border: 1px solid grey;
   border-radius: 5px;
 }
-#btnDiv {
+#btnStartDiv,
+#btnFinishDiv {
   display: flex;
   justify-content: center;
+}
+#triviaScore {
+  text-align: center;
+  color: rgb(85, 88, 85);
+}
+#correctDisplay {
+  color: green;
+}
+#wrongDisplay {
+  color: red;
+}
+#naDisplay {
+  color: rgb(85, 88, 85);
 }
